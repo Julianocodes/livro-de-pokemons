@@ -23,7 +23,7 @@ Estrutura
 ```text
 pokedex/
 ├── index.html
-├── style.css
+├── styles.css
 ├── script.js
 └── pokebola.svg
 ```
