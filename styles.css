@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #333;
+}
+
+.contaner {
+  max-width: 100%;
+  display: grid;
+  justify-content: center;
+}
+.card {
+  height: 400px;
+  background-color: rgb(235, 235, 255);
+  border: 2px solid #333;
+  border-radius: 12px;
+  margin: 20px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 0 40px 10px rgba(255, 215, 0, 0.6);
+  position: relative;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: -20px;
+  background: rgb(28, 28, 230);
+  filter: blur(30px);
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.card img {
+  width: 250px;
+  height: 200px;
+  image-rendering: pixelated;
+}
+
+.nome {
+  background-color: rgb(187, 25, 4);
+  padding: 10px;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.tipo-nome {
+  font-weight: bold;
+}
+
+.pesquisa::before {
+  display: grid;
+  content: "";
+  position: absolute;
+  inset: -20px;
+  background: rgb(28, 28, 230);
+  filter: blur(30px);
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.buscador {
+  display: flex;
+  gap: 10px;
+  margin: 20px;
+  padding: 16px;
+  border: 2px solid #333;
+  border-radius: 12px;
+  background-color: rgb(235, 235, 255);
+}
+
+.buscador input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 5px;
+}
+
+.buscador button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(187, 25, 4);
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#mensagem {
+  margin: 0 20px;
+  font-size: 2rem;
+  text-align: center;
+  color: #ff9a9a;
+  font-weight: bold;
+}
+
+.card.eletric {
+  background-color: rgb(255, 245, 157);
+}
+.card.fire {
+  background-color: rgb(255, 204, 153);
+}
+.card.water {
+  background-color: rgb(179, 217, 255);
+}
+.card.grass {
+  background-color: rgb(187, 235, 187);
+}
+.card.psychic {
+  background-color: rgb(240, 190, 235);
+}
